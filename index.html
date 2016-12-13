@@ -13,6 +13,12 @@
   * {
     font-family: "zerozeroone", sans-serif;
   }
+
+  body {
+    margin: 10%;
+    background: gray;
+  }
+
   a:link {
     color:#000;
     text-decoration: none;
@@ -21,7 +27,7 @@
     color:#000;
   }
   a:hover {
-    color:#33F;
+    color:blue;
   }
   .button {
     background: -webkit-linear-gradient(top,#008dfd 0,#0370ea 100%);
@@ -37,21 +43,22 @@
     text-shadow: 1px 1px 1px #076bd2;
     letter-spacing: normal;
   }
+
   .center {
     padding: 10px;
     text-align: center;
   }
   .final {
-    color: black;
+    color: #fff;
     padding-right: 3px; 
   }
   .interim {
-    color: gray;
+    color: #blue;
   }
   .info {
     font-size: 14px;
     text-align: center;
-    color: #777;
+    color: #fff;
     display: none;
   }
   .right {
@@ -67,10 +74,11 @@
   #headline {
     font-size: 40px;
     font-weight: 300;
+    color: #fff;
   }
   #info {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     color: #777;
     visibility: hidden;
   }
@@ -87,7 +95,7 @@
     padding: 0;
   }
 </style>
-<h1 class="center" id="headline">
+<h1 id="headline">
   <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">
     murmurmuring</a></h1>
 <div id="info">
@@ -132,7 +140,7 @@
     </div>
   </div>
   <p>
-  <div id="div_language">
+  <div id="div_language" style="display:none;">
     <select id="select_language" onchange="updateCountry()"></select>
     &nbsp;&nbsp;
     <select id="select_dialect"></select>
