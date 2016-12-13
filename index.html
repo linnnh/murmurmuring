@@ -86,13 +86,20 @@
     line-height: 48px;
     text-align: left;
     min-height: 150px;
-    padding-top: 20px;
+    padding-top: 50px;
   }
   #start_button {
     border: 0;
     background-color:transparent;
     padding: 0;
   }
+
+  .fixedPosition {
+        position: fixed;
+    right: 40px;
+    top: 40px;
+  }
+  
 </style>
 <h1 id="headline">
   <a href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">
@@ -113,7 +120,7 @@
     go to chrome://settings/contentExceptions#media-stream</p>
   <p id="info_upgrade">Web Speech API only works for <a href="//www.google.com/chrome">Chrome</a>version 25 or later.</p>
 </div>
-<div class="right">
+<div class="right fixedPosition">
   <button id="start_button" onclick="startButton(event)">
     <img id="start_img" src="mic.gif" alt="Start"></button>
 </div>
